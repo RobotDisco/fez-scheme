@@ -1,0 +1,12 @@
+* Porting Notes
+- Emacs Lisp is dynamically scoped by default, how do I deal with that?
+- Scheme macros are hygenic and apparently support multi-arity
+- In scheme everything is true except #f (INCLUDING NIL and '() !!!), in emacs lisp everything is true except nil
+- Emacs lisp has no tail-call optimization and the LISP sample code depends on it
+* Progress
+** 2021-01-31
+- Blindly copying up to the end of Chapter 1.7
+- Doesn't compile because haven't figured out elisp names for some functions
+- Some porting issues from above around macros and TCO
+- split definitial into definitial and definitial1 for multi-arity reasons
+- My brain started hurted when thinking about dynamic/lexical scope so I haven't figured out yet if I want to implement any alternative forms of =make-function= or =invoke=
