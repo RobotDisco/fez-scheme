@@ -5,7 +5,7 @@
 - Emacs lisp has no tail-call optimization and the LISP sample code depends on it
 * Progress
 ** 2021-01-31
-- Blindly copying up to the end of Chapter 1.7
+- Naively copying up to the end of Chapter 1.7
 - Doesn't compile because haven't figured out elisp names for some functions
 - Some porting issues from above around macros and TCO
 - split definitial into definitial and definitial1 for multi-arity reasons
